@@ -79,8 +79,6 @@ void WallGameWidget::paintEvent(QPaintEvent*){
             db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("snake");
         db.setHostName("127.0.0.1");
-        db.setUserName("root");
-        db.setPassword("wfn0516!!");
 
         QSqlTableModel *model = new QSqlTableModel(this,db);
         model->setTable("user");
